@@ -25,7 +25,7 @@ function App() {
         setTime(shortOrLong())
         setOnBreak(true)
         setCount(count + 1);
-        audio.play()
+        // audio.play()
       }
       else if (onBreak && time === 0){
         setOnBreak(false);
