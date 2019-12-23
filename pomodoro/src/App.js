@@ -35,12 +35,11 @@ function App() {
 					setCount(count + 1);
 					audio.play();
 				} else if (onBreak && time === 0) {
-          audio.play();
+					audio.play();
 					setOnBreak(false);
 					setTime(1500);
 					clearInterval(int);
 					setActive(false);
-					
 				}
 			}
 			return () => clearInterval(int);
@@ -70,7 +69,10 @@ function App() {
 	return (
 		<div className="App" id="container">
 			<h1>Pomodoro Timer</h1>
-  <h2>{onBreak? "Break: " : "Work: "}{formatTime()}</h2>
+			<h2>
+				{onBreak ? 'Break: ' : 'Work: '}
+				{formatTime()}
+			</h2>
 			<p>{`Pomodoros Completed: ${count}`}</p>
 			<div className="button-row">
 				<button onClick={() => toggleColor()}>Change Color</button>
