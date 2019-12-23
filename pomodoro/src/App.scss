@@ -24,11 +24,17 @@ $tablet: "only screen and (max-width : 600px)";
     font-size: 3rem;
     color: white;
     margin: 20px;
+    @media #{$tablet} {
+      margin: 10px;
+    }
   }
   h2{
     color: white;
     font-size: 3rem;
     margin: 20px;
+    @media #{$tablet} {
+      margin: 10px;
+    }
   }
   p{
     font-size: 1.8rem;
@@ -36,10 +42,13 @@ $tablet: "only screen and (max-width : 600px)";
     margin: 20px;
     @media #{$tablet} {
       font-size: 1.6rem;
+      margin: 10px;
     }
     
   }
 }
+
+
 
 .colorPicker{
   display: none;
