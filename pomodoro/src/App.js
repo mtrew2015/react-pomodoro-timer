@@ -22,7 +22,7 @@ function App() {
 				}
 			};
 			let int = null;
-			document.title = onBreak ? `Break: ${formatTime}` : `Work: ${formatTime}`;
+			document.title = onBreak ? `Break: ${formatTime()}` : `Work: ${formatTime()}`;
 			if (active && time > 0) {
 				int = setInterval(() => {
 					setTime((time) => time - 1);
