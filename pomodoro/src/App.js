@@ -4,7 +4,7 @@ import { CirclePicker } from 'react-color';
 import './App.scss';
 
 function App() {
-	const [ time, setTime ] = useState(15);
+	const [ time, setTime ] = useState(1500);
 	const [ active, setActive ] = useState(false);
 	const [ count, setCount ] = useState(0);
 	const [ onBreak, setOnBreak ] = useState(false);
@@ -22,7 +22,7 @@ function App() {
 				}
 			};
 			let int = null;
-			document.title = onBreak ? `Break: ${time}` : `${time} Left`;
+			document.title = onBreak ? `Break: ${time}` : `Work: ${time}`;
 			if (active && time > 0) {
 				int = setInterval(() => {
 					setTime((time) => time - 1);
