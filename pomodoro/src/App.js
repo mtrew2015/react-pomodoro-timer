@@ -73,7 +73,7 @@ function App() {
   <h2>{onBreak? "Break: " : "Work: "}{formatTime()}</h2>
 			<p>{`Pomodoros Completed: ${count}`}</p>
 			<div className="button-row">
-				<button onClick={() => toggleColor()}>Background Color</button>
+				<button onClick={() => toggleColor()}>Change Color</button>
 
 				<button onClick={() => setActive(!active)}>{active ? 'Pause' : 'Start'}</button>
 			</div>
